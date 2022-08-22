@@ -1,0 +1,140 @@
+*{
+box-sizing: border-box;
+font-family: arial,sans-serif;
+}
+
+#gamefield{
+margin: auto;
+display: flex;
+align-items: center;
+flex-direction: column;
+min-width: 768px;
+}
+
+#header{
+margin: 24px auto 0;
+text-align: center;
+}
+
+#field{
+min-width: 490px;
+margin: 25px auto 25px;
+padding: 20px;
+border: 1px lightgray solid;
+border-radius: 5px;
+}
+
+#cards-narrow{
+width: 240px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 25px auto 25px;
+padding: 20px;
+}
+
+#cards{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+margin: 25px auto 25px;
+padding: 20px;
+
+
+}
+.open{
+background-color: white;
+border: 1px lightgray solid; ;
+}
+
+.close{
+background-color: lightgray;
+border: 1px lightgray solid;
+}
+
+
+.card{
+height: 120px;
+width: 80px;
+display: flex;
+margin: 10px;
+padding: 5px;
+list-style: none;
+border-radius: 5px;
+font-size: 60px;
+text-align: center;
+}
+
+.card p{
+margin: auto;
+}
+
+#remain{
+display: inline;
+color: lightgray;
+}
+
+#seconds{
+margin-left: 5px;
+display: inline;
+}
+
+
+#form{
+display: block;
+margin: 25px auto 25px;
+border: 1px lightgray solid;
+border-radius: 5px;
+padding: 20px;
+}
+
+
+.input{
+margin: 10px;
+padding: 5px;
+border: 1px lightgray solid;
+border-radius: 1px;
+}
+.input::placeholder{
+opacity: 75%;
+}
+.input:focus{
+outline: 2px lightgray solid;
+}
+
+#btn{
+display: block;
+height: 27px;
+
+margin: 10px;
+padding-left: 20px;
+padding-right: 20px;
+border: none;
+background-color: lightgray;
+color: white;
+}
+#btn:active{
+background-color: white;
+color: lightgray;
+border:1px lightgray solid;
+}
+
+#restart{
+margin: auto;
+height: 50px;
+width: 490px;
+margin: 10px;
+padding-left: 30px;
+padding-right: 30px;
+border: none;
+background-color: lightgray;
+color: white;
+font-size: 25px;
+}
+
+#restart:active{
+
+background-color: white;
+color: lightgray;
+border:1px lightgray solid;
+}

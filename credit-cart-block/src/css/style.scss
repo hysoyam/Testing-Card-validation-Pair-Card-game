@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(246, 246, 246);
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.error {
+  border-color: rgb(245, 125, 125) !important;
+  color: rgb(245, 125, 125);
+}
+
+.form {
+  width: 350px;
+  margin: 150px auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+
+}
+
+.input-label {
+  padding-left: 9px ;
+  margin-bottom: 4px;
+  color: rgb(92 92 92);
+  font-size: 16px;
+}
+
+.input-inputfield {
+  padding: 4px 8px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-group {
+  position: relative;
+  display: grid;
+}
+
+.input-error-block.hidden {
+  max-height: 0;
+  opacity: 0;
+}
+
+.input-error-block {
+  margin-top: 3px;
+  padding-left: 9px ;
+  max-height: 150px;
+
+  font-size: 14px;
+  color: rgb(245, 125, 125);
+  transition: max-height 0.3s ease-in-out, opacity 0.2s;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  align-self: flex-start;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  font-size: inherit;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px rgb(211, 211, 211);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:active {
+    border-color: rgb(207, 207, 207);
+    box-shadow: none;
+    color: rgb(207, 207, 207);
+    cursor: auto;
+  }
+}
+
+.payment-system-icon{
+  position: absolute;
+  height: 28px;
+  right: 12px;
+  top: 25px;
+}
